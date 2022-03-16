@@ -19,10 +19,10 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Set up Node
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
 
@@ -94,7 +94,7 @@ jobs:
       if: false # success()
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
-      uses: voxmedia/github-action-slack-notify-build@v1
+      uses: voxmedia/github-action-slack-notify-build@v2
       with:
         channel: watson-e2e-tests
         status: SUCCESS
@@ -104,7 +104,7 @@ jobs:
       if: failure()
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATIONS_BOT_TOKEN }}
-      uses: voxmedia/github-action-slack-notify-build@v1
+      uses: voxmedia/github-action-slack-notify-build@v2
       with:
         channel: watson-e2e-tests
         status: FAILED
