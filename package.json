@@ -69,7 +69,7 @@
     "installed-check": "3.0.0",
     "jest": "25.5.4",
     "jsdoc": "3.6.6",
-    "lint-staged": "10.5.3",
+    "lint-staged": "10.5.4",
     "prettier": "2.2.1",
     "semantic-release": "17.3.1",
     "snyk": "1.437.3",
