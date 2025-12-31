@@ -85,7 +85,7 @@
   },
   "dependencies": {
     "@types/async": "3.2.5",
-    "@types/extend": "3.0.1",
+    "@types/extend": "3.0.4",
     "@types/isstream": "0.1.0",
     "@types/node": "13.13.39",
     "@types/websocket": "1.0.1",
